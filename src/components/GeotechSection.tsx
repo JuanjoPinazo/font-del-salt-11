@@ -21,11 +21,11 @@ export default function GeotechSection() {
             <h2 className="text-sm font-bold text-brand-500 tracking-widest uppercase mb-3">
               Estudio Geotécnico Completado
             </h2>
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-              Terreno Sólido, Ahorro Seguro
-            </h3>
-            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              La parcela cuenta con un estudio geotécnico ya realizado, confirmando la excelente calidad del subsuelo para la construcción. Esto supone un ahorro directo y elimina la incertidumbre en el cálculo de la cimentación.
+            <h2 className="text-3xl font-extrabold text-white mb-6">
+              Estudio geotécnico ya realizado
+            </h2>
+            <p className="text-slate-300 text-lg mb-8 leading-relaxed font-light">
+              La parcela cuenta con un estudio geotécnico ya realizado, confirmando la calidad del subsuelo para la construcción. Esto facilita el cálculo de la cimentación como base técnica del proyecto.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

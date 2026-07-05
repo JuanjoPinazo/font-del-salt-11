@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { contact } from "@/data/contact";
+import { getWhatsAppUrl } from "@/lib/contact";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -67,11 +67,11 @@ export default function Header() {
 
           {/* Contact Button Desktop */}
           <div className="hidden xl:block">
-             <a 
-                href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+              <a
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 rounded-xl transition-colors shadow-lg shadow-brand-500/30"
+                className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-slate-800 bg-brand-500 hover:bg-brand-400 rounded-xl transition-all shadow-lg shadow-brand-500/20"
               >
                 Hablar por WhatsApp
               </a>
@@ -105,7 +105,7 @@ export default function Header() {
           ))}
           <div className="pt-4 mt-2 border-t border-slate-800">
             <a 
-                href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full px-5 py-4 text-base font-bold text-white bg-brand-600 rounded-xl"

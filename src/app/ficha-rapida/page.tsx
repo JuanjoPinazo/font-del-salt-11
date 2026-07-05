@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { propertyDocuments } from "@/data/documents";
 import { propertyImages } from "@/data/images";
+import { getWhatsAppUrl } from "@/lib/contact";
 
 export default function FichaRapida() {
-  const whatsappUrl = "https://wa.me/34629083361?text=Hola,%20he%20visto%20la%20parcela%20de%20Font%20del%20Salt%2011%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n";
+  const whatsappUrl = getWhatsAppUrl();
 
   return (
     <div className="min-h-screen bg-slate-50 py-8 print:py-0 print:bg-white font-sans text-slate-800">

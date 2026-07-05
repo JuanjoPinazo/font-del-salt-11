@@ -104,9 +104,9 @@ export default function BuildPotential() {
             </ul>
 
             <div className="mt-10 pt-6 border-t border-slate-800 text-center">
-              <a href="#descargas" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-brand-500 bg-brand-500/10 hover:bg-brand-500 hover:text-white rounded-xl transition-all border border-brand-500/30">
-                <i className="fa-regular fa-file-pdf mr-2"></i> Descargar Topográfico y Normativa
-              </a>
+              <span className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-slate-300 bg-slate-900 rounded-xl border border-slate-700 cursor-not-allowed">
+                <i className="fa-regular fa-file-pdf mr-2"></i> Documentación técnica disponible bajo solicitud
+              </span>
             </div>
           </div>
         </div>

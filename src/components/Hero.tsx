@@ -1,9 +1,9 @@
 "use client";
 
-import { contact } from "@/data/contact";
 import LocalImage from "@/components/ui/LocalImage";
 import { propertyImages } from "@/data/images";
 import { propertyDocuments } from "@/data/documents";
+import { getWhatsAppUrl } from "@/lib/contact";
 
 export default function Hero() {
 
@@ -46,7 +46,7 @@ export default function Hero() {
                 <i className="fa-solid fa-arrow-right ml-2"></i>
               </a>
               <a
-                href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-800 bg-[#25D366] hover:bg-[#20b858] rounded-xl transition-all shadow-lg hover:shadow-[#25D366]/40 hover:-translate-y-1"
@@ -105,7 +105,7 @@ export default function Hero() {
                   79.000 €
                 </div>
                 <div className="text-[10px] sm:text-xs text-slate-300 font-medium max-w-[200px] leading-tight">
-                  Incluye: Geotécnico, Topográfico, IBI y Plusvalía 2021 abonada.
+                  Documentación disponible: geotécnico, topográfico, catastro y dossier comercial.
                 </div>
               </div>
               

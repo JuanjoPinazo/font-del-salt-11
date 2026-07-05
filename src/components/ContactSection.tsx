@@ -2,6 +2,7 @@
 
 import { contact } from "@/data/contact";
 import { propertyDocuments } from "@/data/documents";
+import { getWhatsAppUrl, getMailtoUrl } from "@/lib/contact";
 
 export default function ContactSection() {
   return (
@@ -41,7 +42,7 @@ export default function ContactSection() {
                 <i className="fa-solid fa-download ml-3"></i>
               </a>
               <a 
-                href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`}
+                href={getWhatsAppUrl()}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-900 bg-[#25D366] hover:bg-[#20b858] rounded-xl transition-all shadow-lg"
@@ -66,17 +67,17 @@ export default function ContactSection() {
             </p>
 
             <div className="space-y-6">
-              <a href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl group-hover:bg-brand-500 group-hover:text-white transition-all">
                   <i className="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
                   <h4 className="text-white font-bold group-hover:text-brand-500 transition-colors">WhatsApp</h4>
-                  <p className="text-slate-400">{contact.phone}</p>
+                  <p className="text-slate-400">{contact.phoneDisplay}</p>
                 </div>
               </a>
               
-              <a href={`mailto:${contact.email}`} className="flex items-center gap-4 group">
+              <a href={getMailtoUrl()} className="flex items-center gap-4 group">
                 <div className="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl group-hover:bg-brand-500 group-hover:text-white transition-all">
                   <i className="fa-regular fa-envelope"></i>
                 </div>
@@ -92,7 +93,7 @@ export default function ContactSection() {
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <h4 className="text-2xl font-bold text-white mb-6">Envíanos un mensaje</h4>
             
-            <form action={`mailto:${contact.email}`} method="GET" encType="text/plain" className="space-y-5">
+            <form action={getMailtoUrl()} method="GET" encType="text/plain" className="space-y-5">
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-2">Asunto</label>
                 <input 

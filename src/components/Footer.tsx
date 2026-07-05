@@ -1,5 +1,6 @@
 import { PROPERTY } from "@/data/property";
 import { contact } from "@/data/contact";
+import { getWhatsAppUrl, getMailtoUrl } from "@/lib/contact";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -37,11 +38,11 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400 text-sm">
               <li className="flex items-center gap-3">
                 <i className="fa-regular fa-envelope text-brand-500"></i>
-                <a href={`mailto:${contact.email}`} className="hover:text-brand-500 transition-colors">{contact.email}</a>
+                <a href={getMailtoUrl()} className="hover:text-brand-500 transition-colors">{contact.email}</a>
               </li>
               <li className="flex items-center gap-3">
                 <i className="fa-brands fa-whatsapp text-brand-500"></i>
-                <a href={`https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(contact.whatsappMessage)}`} target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-colors">
+                <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-colors">
                   WhatsApp Directo
                 </a>
               </li>
