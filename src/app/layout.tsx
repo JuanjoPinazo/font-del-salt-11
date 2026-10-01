@@ -10,8 +10,10 @@ const inter = Inter({
 
 const ogImage = propertyImages.premiumRenders.atardecer;
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://font-del-salt-11.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://parcela-fontdelsalt.com"),
+  metadataBase: new URL(siteUrl),
   title: "Parcela urbana en Náquera | Font del Salt 11",
   description:
     "Parcela urbana de 812 m² en Urbanización El Paraíso, Náquera, con estudio geotécnico, topográfico, renders orientativos, dossier comercial y ficha rápida.",

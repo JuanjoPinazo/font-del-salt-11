@@ -16,7 +16,8 @@ export default function Header() {
   }, []);
 
   const menuItems = [
-    { label: "Galería", href: "#galeria", icon: "fa-camera" },
+    { label: "Desnivel", href: "#aprovechar-desnivel", icon: "fa-arrow-trend-up" },
+    { label: "Renders", href: "#premium-visuals", icon: "fa-camera" },
     { label: "5 Vistas", href: "#vistas", icon: "fa-eye" },
     { label: "Datos clave", href: "#potencial", icon: "fa-compass" },
     { label: "Geotécnico", href: "#geotecnico", icon: "fa-layer-group" },

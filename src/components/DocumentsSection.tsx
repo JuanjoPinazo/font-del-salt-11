@@ -11,10 +11,11 @@ export default function DocumentsSection() {
             Documentación
           </h2>
           <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-            Todo lo que necesitas saber
+            Datos Técnicos y Documentación Disponible
           </h3>
           <p className="text-slate-400 text-lg">
-            Descarga el dossier con el resumen completo o solicita los documentos técnicos para evaluarlos con tu arquitecto.
+            Descarga el dossier con el resumen completo o solicita los documentos técnicos. <br className="hidden sm:block" />
+            <span className="text-brand-400 font-semibold text-sm">Importante: Todos los datos urbanísticos deben ser validados por tu arquitecto o Ayuntamiento antes de comprar o proyectar.</span>
           </p>
         </div>
 
@@ -88,9 +89,11 @@ export default function DocumentsSection() {
           </div>
         </div>
 
-        {/* Documentos Técnicos Bajo Solicitud */}
-        <div className="mb-4">
-          <h4 className="text-white font-bold text-lg mb-4">Documentación técnica <span className="text-slate-400 text-sm font-normal">(bajo solicitud)</span></h4>
+        <div className="mb-4 mt-12 border-t border-slate-800 pt-8">
+          <h4 className="text-white font-bold text-xl mb-2">Datos y documentación técnica <span className="text-brand-500">(disponible bajo solicitud)</span></h4>
+          <p className="text-slate-400 text-sm mb-6 max-w-2xl">
+            Esta documentación permite a tu arquitecto estudiar el encaje, solución de cimentación, contenciones, viabilidad de acometidas y coste final del movimiento de tierras antes de avanzar.
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="glass-panel p-5 rounded-2xl border border-slate-800 bg-dark-900 flex items-center justify-between opacity-80">

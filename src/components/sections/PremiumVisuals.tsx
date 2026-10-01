@@ -9,28 +9,42 @@ export default function PremiumVisuals() {
       id: "antesDespues",
       imgSrc: propertyImages.premiumRenders.antesDespues,
       title: "Antes y después",
-      text: "Una comparación visual entre el estado actual de la parcela y una posible vivienda integrada en el terreno.",
-      colSpan: "lg:col-span-2", // Ocupa 2 columnas en desktop
+      text: "Comparativa visual orientativa entre el estado actual y una idea de implantación.",
+      colSpan: "lg:col-span-2",
     },
     {
       id: "vistaAerea",
       imgSrc: propertyImages.premiumRenders.vistaAerea,
-      title: "Implantación orientativa",
-      text: "Vista aérea para entender cómo podrían organizarse vivienda, piscina, jardín, acceso y garaje.",
+      title: "Implantación aérea (Conceptual)",
+      text: "Una solución posible sería escalonar volúmenes y zonas exteriores.",
+      colSpan: "lg:col-span-2",
+    },
+    {
+      id: "accesoCalle",
+      imgSrc: propertyImages.renders.accesoCalle,
+      title: "Acceso desde calle",
+      text: "Posible propuesta arquitectónica para resolver la entrada.",
       colSpan: "lg:col-span-1",
     },
     {
-      id: "atardecer",
-      imgSrc: propertyImages.premiumRenders.atardecer,
-      title: "Atardecer con iluminación exterior",
-      text: "Una imagen emocional para visualizar el potencial residencial y aspiracional de la parcela.",
+      id: "garaje",
+      imgSrc: propertyImages.renders.garaje,
+      title: "Garaje integrado",
+      text: "Orientación visual de cómo podría encajarse el aparcamiento en la cota baja.",
       colSpan: "lg:col-span-1",
+    },
+    {
+      id: "viviendaIntegrada",
+      imgSrc: propertyImages.renders.viviendaPiscina,
+      title: "Vivienda integrada",
+      text: "Propuesta de cómo la arquitectura puede adaptarse al perfil natural del terreno.",
+      colSpan: "lg:col-span-2",
     },
     {
       id: "cotaBaja",
       imgSrc: propertyImages.premiumRenders.cotaBaja,
-      title: "Desde el interior de la parcela",
-      text: "Perspectiva desde la cota baja que ayuda a entender el desnivel y la integración de la vivienda.",
+      title: "Render desde cota baja",
+      text: "Perspectiva conceptual de la vivienda desde el interior de la parcela.",
       colSpan: "lg:col-span-2",
     },
   ];
@@ -45,10 +59,10 @@ export default function PremiumVisuals() {
             Exploración Visual
           </h2>
           <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-            Visualiza el potencial de la parcela
+            Recursos Visuales Explicativos
           </h3>
           <p className="text-slate-400 text-lg">
-            Renders orientativos creados a partir de la parcela, su pendiente, su entorno y las posibilidades de implantación.
+            Imágenes conceptuales orientativas. No constituyen proyecto técnico ni licencia urbanística.
           </p>
         </div>
 
@@ -84,12 +98,10 @@ export default function PremiumVisuals() {
                 <p className="text-slate-400 leading-relaxed">
                   {visual.text}
                 </p>
-                {visual.id === "vistaAerea" && (
-                  <div className="mt-4 p-4 bg-slate-900 rounded-xl border border-slate-800 text-xs text-slate-500 italic">
-                    <i className="fa-solid fa-circle-info mr-2 text-brand-500/50"></i>
-                    Implantación orientativa no vinculante. La distribución definitiva dependerá del proyecto arquitectónico, normativa urbanística y validación técnica.
-                  </div>
-                )}
+                <div className="mt-4 p-4 bg-slate-900 rounded-xl border border-slate-800 text-xs text-slate-500 italic">
+                  <i className="fa-solid fa-circle-info mr-2 text-brand-500/50"></i>
+                  Imágenes conceptuales orientativas. No constituyen proyecto técnico ni licencia urbanística.
+                </div>
               </div>
             </div>
           ))}

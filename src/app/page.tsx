@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SlopeAdvantages from "@/components/SlopeAdvantages";
 import PremiumVisuals from "@/components/sections/PremiumVisuals";
 import Gallery from "@/components/Gallery";
 import PerspectiveViewer from "@/components/PerspectiveViewer";
@@ -19,12 +20,13 @@ export default function Home() {
       
       <main className="flex-grow pt-16 sm:pt-20">
         <Hero />
+        <SlopeAdvantages />
         <PremiumVisuals />
-        <Gallery />
-        <PerspectiveViewer />
         <BuildPotential />
+        <PerspectiveViewer />
         <GeotechSection />
         <Calculator />
+        <Gallery />
         <FAQ />
         <DocumentsSection />
         <ContactSection />

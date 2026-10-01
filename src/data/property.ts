@@ -12,10 +12,6 @@ export const PROPERTY = {
     "Estudio topográfico disponible",
     "Fachada amplia",
   ],
-  price: "A consultar", // Dejar constante editable si se quiere mostrar el precio
+  price: "Precio bajo consulta",
   description: "Parcela urbana premium lista para construir.",
-  contactEmail: "contacto@tudominio.com", // Cambiar por el email real
-  whatsappNumber: "34600000000", // Cambiar por el número real con código de país
-  whatsappMessage:
-    "Hola, estoy interesado en la parcela de C/ Font del Salt, 11 en Náquera. Me gustaría recibir más información.",
 };

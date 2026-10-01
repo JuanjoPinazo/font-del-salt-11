@@ -55,7 +55,7 @@ export default function BuildPotential() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold">Construcción orientativa máx.</h4>
-                    <p className="text-slate-400 text-sm">Superficie de techo construible</p>
+                    <p className="text-slate-400 text-sm">Según datos urbanísticos disponibles</p>
                   </div>
                 </div>
                 <div className="text-right">
@@ -103,10 +103,9 @@ export default function BuildPotential() {
               </li>
             </ul>
 
-            <div className="mt-10 pt-6 border-t border-slate-800 text-center">
-              <span className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-slate-300 bg-slate-900 rounded-xl border border-slate-700 cursor-not-allowed">
-                <i className="fa-regular fa-file-pdf mr-2"></i> Documentación técnica disponible bajo solicitud
-              </span>
+            <div className="mt-6 p-4 bg-slate-900 rounded-xl border border-slate-800 text-xs text-slate-500 italic">
+              <i className="fa-solid fa-triangle-exclamation mr-2 text-brand-500/50"></i>
+              Todos estos datos proceden de la documentación disponible y quedan pendientes de validación técnica y urbanística municipal por parte del comprador o su arquitecto.
             </div>
           </div>
         </div>
